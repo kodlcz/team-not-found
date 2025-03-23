@@ -1,0 +1,24 @@
+23.3-git
+28.3-návrh GUI
+5.4-programový návrh
+10.4-kompleace programu
+15.4-implmentce GUI
+18.4-makefile
+20.4-profiling
+28.4-debugging
+29.4-testy
+29.4-mockupy
+30.4-dokumentace
+1.5-instaláory
+
+xkadlea00 (implementace GUI,programování,git,debugging)
+xtihelw00 (návrh GUI a mockup,programování,instalátory,makefile)
+xvacekj00 (testy, dokumentace,profiling)
+
+zvolený komunikační kanál byl zolen discord bez jakýchkoliv pravidel jelikož plně věře členům týmu
+
+
+systém pro právu verzí bude github a vyučující budou přdni pomocí mailu: ivs.kontrola@gmail.com a odkaz na git:https://github.com/kodlcz/team-not-found
+
+
+
