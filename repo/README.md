@@ -1,17 +1,16 @@
 Prostredi
 ---------
 
-Ubuntu 64bit
+
 Windows 64bit
 
 Autori
 ------
 
 Nazev tymu
-- xlogin01 jmeno prijmeni 
-- xlogin02 jmeno prijmeni 
-- xlogin03 jmeno prijmeni 
-- xlogin04 jmeno prijmeni 
+- xkadlea00 Adam Kadlec
+- xtihelw00 William Denis Tihelka
+- xvacekj00 Jan Vacek 
 
 Licence
 -------
