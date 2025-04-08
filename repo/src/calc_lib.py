@@ -79,5 +79,20 @@ def faktorial(num1):
     
 Tato funkce vykonává faktorial čísla a kontroluje zda může dojít k chybě.
 """
-def square(num1, num2):
+def expon(num1, num2):
+    if not isinstance(num1,(int,float)) and isinstance(num2,(int,float)):
+        return "chyba 1"
     return num1 ** num2
+"""
+@brief faktorial čísla.
+    
+@param num1 první číslo (int).
+@return vrátí faktorial čísla zároveň může vrátit chybu (int).
+@todo dodělat komentář a ošetřit funkci.
+    
+Tato funkce vykonává faktorial čísla a kontroluje zda může dojít k chybě.
+"""
+def sqrR(num1,num2):
+    if not isinstance(num1,(int,float)) and isinstance(num2,(int,float)):
+        return "chyba 1"
+    return num1 ** (1/num2) 
