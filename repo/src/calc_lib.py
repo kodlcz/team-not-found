@@ -73,8 +73,8 @@ def faktorial(num1):
 """
 @brief umocňuje číslo.
     
-@param num1 první číslo (int,float).
-@param num2 druhé číslo (int,float)
+@param num1 umocnovane cislo (int,float).
+@param num2 kolika mocnina(int,float)
 @return vrátí mocninu čísla zároveň může vrátit chybu (int).
 
     
@@ -87,8 +87,8 @@ def expon(num1, num2):
 """
 @brief odmocnina čísla.
     
-@param num1 první číslo (int,float).
-@param num2 druhé číslo (int,float).
+@param num1 odmocnovane cislo (int,float).
+@param num2 kolikata odmocnina (int,float).
 @return vrátí odmocninu čísla zároveň může vrátit chybu (int).
 
     
@@ -112,3 +112,26 @@ def abs(num1):
     if(num1 > 0):
         return num1
     return -num1
+"""
+@brief provedení počet fibonacciho posloupnost.
+    
+@param num1 kolikrát se fibonacciho posloupnost provede (int).
+@return vrátí finalní číslo z fibonacciho posloupnosti a zároveň může vrátit chybu (int).
+    
+Tato funkce provede x krát fibonacciho poslopnost a vratí hodnotu a kontroluje zda může dojít k chybě.
+"""
+def fib(num1):
+    if not isinstance(num1,(int,float)):
+        return "chyba 1"
+    if num1 < 0:
+        return "chyba 4"
+    num = 0 
+    num0 = 1
+    if num1 == 0:
+        return 0
+    while num1 > 0:
+            num00 = num
+            num += num0
+            num0 = num00
+            num1 -= 1
+    return num
