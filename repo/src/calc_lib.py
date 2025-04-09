@@ -71,42 +71,43 @@ def faktorial(num1):
         num1 -= 1
     return num2
 """
-@brief faktorial čísla.
+@brief umocňuje číslo.
     
-@param num1 první číslo (int).
-@return vrátí faktorial čísla zároveň může vrátit chybu (int).
-@todo dodělat komentář a ošetřit funkci.
+@param num1 první číslo (int,float).
+@param num2 druhé číslo (int,float)
+@return vrátí mocninu čísla zároveň může vrátit chybu (int).
+
     
-Tato funkce vykonává faktorial čísla a kontroluje zda může dojít k chybě.
+Tato funkce umodňuje první číslo pomocí druhého a kontroluje zda může dojít k chybě.
 """
 def expon(num1, num2):
     if not isinstance(num1,(int,float)) and isinstance(num2,(int,float)):
         return "chyba 1"
     return num1 ** num2
 """
-@brief faktorial čísla.
+@brief odmocnina čísla.
     
-@param num1 první číslo (int).
-@return vrátí faktorial čísla zároveň může vrátit chybu (int).
-@todo dodělat komentář a ošetřit funkci.
+@param num1 první číslo (int,float).
+@param num2 druhé číslo (int,float).
+@return vrátí odmocninu čísla zároveň může vrátit chybu (int).
+
     
-Tato funkce vykonává faktorial čísla a kontroluje zda může dojít k chybě.
+Tato funkce odmocniňuje prvního čísla pomocí druhého a kontroluje zda může dojít k chybě.
 """
 def sqrR(num1,num2):
     if not isinstance(num1,(int,float)) and isinstance(num2,(int,float)):
         return "chyba 1"
     return num1 ** (1/num2) 
 """
-@brief faktorial čísla.
+@brief absolutní hodnota čísla.
     
 @param num1 první číslo (int).
-@return vrátí faktorial čísla zároveň může vrátit chybu (int).
-@todo dodělat komentář a ošetřit funkci.
+@return vrátí absolutní hodnotu čísla zároveň může vrátit chybu (int).
     
-Tato funkce vykonává faktorial čísla a kontroluje zda může dojít k chybě.
+Tato funkce vrací vždy kladné číslo a kontroluje zda může dojít k chybě.
 """
 def abs(num1):
-    if not isinstance(num1,(int,float)) and isinstance(num2,(int,float)):
+    if not isinstance(num1,(int,float)):
         return "chyba 1"
     if(num1 > 0):
         return num1
