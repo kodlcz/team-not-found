@@ -1,3 +1,9 @@
+"""
+    @file calc_lib.py
+    @brief knihovna matematických funkcí
+    @details jsou volány funkce které načítají jedno nebo dvě čísla a ověřuje jejich integritu s tím že vrací jedno číslo jako int nebo float.
+    @author Adam Kadlec
+    """
 def add(num1, num2):
     """
     @brief Sčítá dvě čísla.
