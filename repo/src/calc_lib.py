@@ -58,14 +58,14 @@ def factorial(num1):
         return "chyba 3"
     if num1 < 0:
         return "chyba 4"
-    result = 1
+    num = 1
     while num1 > 1:
-        result *= num1
+        num *= num1
         num1 -= 1
-    return result
+    return num
 
 
-def power(num1, num2):
+def expon(num1, num2):
     """
     @brief Umocní číslo.
     @param num1 Základ (int nebo float).
@@ -77,7 +77,7 @@ def power(num1, num2):
     return num1 ** num2
 
 
-def root(num1, num2):
+def sqr(num1, num2):
     """
     @brief Vypočítá odmocninu čísla.
     @param num1 Odmocňované číslo (int nebo float).
@@ -87,7 +87,7 @@ def root(num1, num2):
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
         return "chyba 1"
     if num2 == 0:
-        return "chyba 2"
+        return "chyba 5"
     return num1 ** (1 / num2)
 
 
@@ -99,20 +99,28 @@ def absolute(num1):
     """
     if not isinstance(num1, (int, float)):
         return "chyba 1"
-    return abs(num1)
+    if num1 < 0:
+        num1 *= -1
+    return num1
 
 
-def fibonacci(num1):
+def fib(num1):
     """
     @brief Vypočítá Fibonacciho číslo na dané pozici.
     @param num1 Pořadí v posloupnosti (int).
     @return Vrací číslo z Fibonacciho posloupnosti, nebo chybovou hlášku (int nebo str).
     """
-    if not isinstance(num1, int):
+    if not isinstance(num1,(int,float)):
         return "chyba 1"
     if num1 < 0:
         return "chyba 4"
-    a, b = 0, 1
-    for _ in range(num1):
-        a, b = b, a + b
-    return a
+    num = 0 
+    num0 = 1
+    if num1 == 0:
+        return 0
+    while num1 > 0:
+            num00 = num
+            num += num0
+            num0 = num00
+            num1 -= 1
+    return num

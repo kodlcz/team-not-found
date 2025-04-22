@@ -2,3 +2,4 @@ chyba 1 - nejedná se o číslo
 chyba 2 - nelze dělit nulou
 chyba 3 - nejedná se o celé číslo
 chyba 4 - faktorial nepodporuje záporná čísla
+chyba 5 - nemůžu mít nulovou odmocninu
