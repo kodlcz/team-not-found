@@ -120,16 +120,21 @@ Functions</h2></td></tr>
 <tr class="separator:a727a4270be6e178a633d6242393c6220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3faa8a9bbe33e1d704200fd84b922608" id="r_a3faa8a9bbe33e1d704200fd84b922608"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3faa8a9bbe33e1d704200fd84b922608">factorial</a> (num1)</td></tr>
 <tr class="separator:a3faa8a9bbe33e1d704200fd84b922608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade2e2ee170a200bc8ff5fcb2ae138749" id="r_ade2e2ee170a200bc8ff5fcb2ae138749"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade2e2ee170a200bc8ff5fcb2ae138749">power</a> (num1, num2)</td></tr>
-<tr class="separator:ade2e2ee170a200bc8ff5fcb2ae138749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf058be37d7cd6334bd420dcd7201a59" id="r_abf058be37d7cd6334bd420dcd7201a59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf058be37d7cd6334bd420dcd7201a59">root</a> (num1, num2)</td></tr>
-<tr class="separator:abf058be37d7cd6334bd420dcd7201a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5216dec23ea9109e55cad494402ab599" id="r_a5216dec23ea9109e55cad494402ab599"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5216dec23ea9109e55cad494402ab599">expon</a> (num1, num2)</td></tr>
+<tr class="separator:a5216dec23ea9109e55cad494402ab599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4a3922d65b4a1832c56d2cc55c5482" id="r_a0e4a3922d65b4a1832c56d2cc55c5482"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e4a3922d65b4a1832c56d2cc55c5482">sqr</a> (num1, num2)</td></tr>
+<tr class="separator:a0e4a3922d65b4a1832c56d2cc55c5482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7453442d8b95cdf8cd0252a4782c1ca7" id="r_a7453442d8b95cdf8cd0252a4782c1ca7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7453442d8b95cdf8cd0252a4782c1ca7">absolute</a> (num1)</td></tr>
 <tr class="separator:a7453442d8b95cdf8cd0252a4782c1ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc651fb095490bd1e2a52e5c1dad4ce5" id="r_abc651fb095490bd1e2a52e5c1dad4ce5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc651fb095490bd1e2a52e5c1dad4ce5">fibonacci</a> (num1)</td></tr>
-<tr class="separator:abc651fb095490bd1e2a52e5c1dad4ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a43a0c6e913799ca3b894dfff0f4050" id="r_a4a43a0c6e913799ca3b894dfff0f4050"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a43a0c6e913799ca3b894dfff0f4050">fib</a> (num1)</td></tr>
+<tr class="separator:a4a43a0c6e913799ca3b894dfff0f4050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">    @file calc_lib.py
+    @brief knihovna matematických funkcí
+    @details jsou volány funkce které načítají jedno nebo dvě čísla a ověřuje jejich integritu s tím že vrací jedno číslo jako int nebo float.
+    @author Adam Kadlec
+</pre> </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7453442d8b95cdf8cd0252a4782c1ca7" name="a7453442d8b95cdf8cd0252a4782c1ca7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7453442d8b95cdf8cd0252a4782c1ca7">&#9670;&#160;</a></span>absolute()</h2>
 
@@ -200,6 +205,31 @@ Functions</h2></td></tr>
 </pre> 
 </div>
 </div>
+<a id="a5216dec23ea9109e55cad494402ab599" name="a5216dec23ea9109e55cad494402ab599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5216dec23ea9109e55cad494402ab599">&#9670;&#160;</a></span>expon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">calc_lib.expon </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>num1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>num2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Umocní číslo.
+@param num1 Základ (int nebo float).
+@param num2 Exponent (int nebo float).
+@return Vrací výsledek umocnění, nebo chybovou hlášku (float nebo str).
+</pre> 
+</div>
+</div>
 <a id="a3faa8a9bbe33e1d704200fd84b922608" name="a3faa8a9bbe33e1d704200fd84b922608"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3faa8a9bbe33e1d704200fd84b922608">&#9670;&#160;</a></span>factorial()</h2>
 
@@ -220,14 +250,14 @@ Functions</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="abc651fb095490bd1e2a52e5c1dad4ce5" name="abc651fb095490bd1e2a52e5c1dad4ce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc651fb095490bd1e2a52e5c1dad4ce5">&#9670;&#160;</a></span>fibonacci()</h2>
+<a id="a4a43a0c6e913799ca3b894dfff0f4050" name="a4a43a0c6e913799ca3b894dfff0f4050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a43a0c6e913799ca3b894dfff0f4050">&#9670;&#160;</a></span>fib()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">calc_lib.fibonacci </td>
+          <td class="memname">calc_lib.fib </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>num1</em></span></td><td>)</td>
           <td></td>
@@ -265,39 +295,14 @@ Functions</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="ade2e2ee170a200bc8ff5fcb2ae138749" name="ade2e2ee170a200bc8ff5fcb2ae138749"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade2e2ee170a200bc8ff5fcb2ae138749">&#9670;&#160;</a></span>power()</h2>
+<a id="a0e4a3922d65b4a1832c56d2cc55c5482" name="a0e4a3922d65b4a1832c56d2cc55c5482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e4a3922d65b4a1832c56d2cc55c5482">&#9670;&#160;</a></span>sqr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">calc_lib.power </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>num1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>num2</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">@brief Umocní číslo.
-@param num1 Základ (int nebo float).
-@param num2 Exponent (int nebo float).
-@return Vrací výsledek umocnění, nebo chybovou hlášku (float nebo str).
-</pre> 
-</div>
-</div>
-<a id="abf058be37d7cd6334bd420dcd7201a59" name="abf058be37d7cd6334bd420dcd7201a59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf058be37d7cd6334bd420dcd7201a59">&#9670;&#160;</a></span>root()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">calc_lib.root </td>
+          <td class="memname">calc_lib.sqr </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>num1</em></span>, </td>
         </tr>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['power_0',['power',['../namespacecalc__lib.html#ade2e2ee170a200bc8ff5fcb2ae138749',1,'calc_lib']]],
-  ['profiling_2ecpp_1',['profiling.cpp',['../profiling_8cpp.html',1,'']]]
+  ['mul_0',['mul',['../namespacecalc__lib.html#a7db5e5f1216900c05b54329e611f75d4',1,'calc_lib']]]
 ];
