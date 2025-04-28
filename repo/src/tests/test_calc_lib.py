@@ -34,5 +34,20 @@ class TestMyMathLib(unittest.TestCase):
         self.assertAlmostEqual(div(-574,-284),574/284)
     def test_div_zero(self):
         self.assertEqual(div(14,0),"chyba_2")
+    def test_factorial(self):
+        self.assertEqual(factorial(1),1)
+        self.assertEqual(factorial(0),1)
+        self.assertEqual(factorial(2),2)
+        self.assertEqual(factorial(6),720)
+    def test_factorial_value_err(self):
+        self.assertEqual(factorial(-1),"chyba_4")
+        self.assertEqual(factorial(3.56),"chyba_3")
+    def test_expon(self):
+        self.assertEqual(expon(2, 3), 8)      
+        self.assertEqual(expon(5, 0), 1)     
+        self.assertEqual(expon(7, 1), 7)     
+        self.assertEqual(expon(10, 2), 100)   
+        self.assertEqual(expon(3, 4), 81)     
+        self.assertEqual(expon(2, -2), 0.25)
 if __name__ == "__main__":
     unittest.main()
