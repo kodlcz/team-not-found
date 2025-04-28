@@ -1,8 +1,12 @@
 Prostredi
 ---------
 
-
 Windows 64bit
+
+Jazyk a knihovna
+---------
+Python
+    tkinter
 
 Autori
 ------
@@ -15,4 +19,4 @@ Nazev tymu
 Licence
 -------
 
-Tento program je poskytovan...
+Tento program je poskytovan v ramci lincence GNU General Public License v3.0
