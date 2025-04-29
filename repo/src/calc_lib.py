@@ -93,6 +93,8 @@ def sqr(num1, num2):
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
         return "chyba_1"
     if num2 == 0:
+        return "chyba_2"
+    if num1 < 0:
         return "chyba_5"
     return num1 ** (1 / num2)
 
