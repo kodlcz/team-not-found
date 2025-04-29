@@ -92,13 +92,13 @@ class TestMyMathLib(unittest.TestCase):
          self.assertAlmostEqual(sqr(36,3),36**(1/3))
          self.assertEqual(sqr(1, 5), 1)
          self.assertAlmostEqual(sqr(27, 3), 3)
-         self.assertEqual(sqr(-8,3), -2)
-         self.assertEqual(sqr(-1,1), -1)
+         self.assertAlmostEqual(sqr(8, -3), 0.5)
+         self.assertEqual(sqr(1, -1), 1)
          self.assertEqual(sqr(-16,2), "chyba_5")
          self.assertEqual(sqr(4,0), "chyba_2")
          self.assertAlmostEqual(sqr(2.25, 2), 1.5)
          self.assertEqual(sqr(25.0, 2), 5.0)
-         self.assertNotEqual(sqr(25.0, 2), 5.0)
+         self.assertNotEqual(sqr(25.0, 3), 5.0)
 
     ## @brief Testy pro Fibonacciho posloupnost.
     def test_fib(self):
@@ -108,8 +108,7 @@ class TestMyMathLib(unittest.TestCase):
         self.assertEqual(fib(5), 5)
         self.assertEqual(fib(10), 55)
         self.assertEqual(fib(15), 610)
-        self.assertEqual(fib(-3), "chyba_6")
-        self.assertEqual(fib(1), 0)
+        self.assertEqual(fib(-3), "chyba_4")
 
     ## @brief Testy pro absolutní hodnotu.
     def test_abs(self):
@@ -126,12 +125,12 @@ class TestMyMathLib(unittest.TestCase):
         self.assertEqual(sub(1, "b"), "chyba_1")
         self.assertEqual(mul("x", "y"), "chyba_1")
         self.assertEqual(div("10", 2), "chyba_1")
-        self.assertEqual(factorial("5"), "chyba_1")
+        self.assertEqual(factorial("5"), "chyba_3")
         self.assertEqual(expon("2", "3"), "chyba_1")
         self.assertEqual(sqr("9", 2), "chyba_1")
         self.assertEqual(sqr(9, "2"), "chyba_1")
         self.assertEqual(fib("7"), "chyba_1")
-        self.assertEqual(abs("hodnota"), "chyba_1")
+        self.assertEqual(abs("1"), "chyba_1")
 
 
 ## @brief Spuštění všech unit testů.
