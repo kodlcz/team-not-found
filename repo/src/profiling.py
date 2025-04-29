@@ -20,22 +20,22 @@ nums = []
 numCount = 0
 count = 0
 for val in sys.stdin.read().split():
-# načítá čísla ze stdin a kontroluje zda se jedná o číslo.
+## @brief načítá čísla ze stdin a kontroluje zda se jedná o číslo.
     try:
         nums.append(float(val))
-        # ukládá čísla do listu nums
+        ## @brief ukládá čísla do listu nums
         numCount = add(numCount,float(val))
-        # počítá celkovou hodnotu všech čísel
+        ## @brief počítá celkovou hodnotu všech čísel
         count = add(count,1)
-        # počítá kolik čísel načte
+        ## @brief počítá kolik čísel načte
     except ValueError:
         print("zadané špatné číslo: ", val)
 prum = div(numCount,count)
-# počítá průměr
+## @brief počítá průměr
 prumExp = 0
 for i in nums:
-# prochází list hodnot a umocňuje je a potom sčítá
+## @brief prochází list hodnot a umocňuje je a potom sčítá
     prumExp = add(prumExp,expon(i,2))
-# finální matematický počet
+## @brief finální matematický počet
 print(sqr(mul(div(1,sub(count,1)),sub(prumExp,mul(count,expon(prum,2)))),2))
 
