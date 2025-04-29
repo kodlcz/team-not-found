@@ -17,5 +17,6 @@ var namespaces_dup =
       [ "nums", "namespaceprofiling.html#ae9e6a8747426c21e895a16c83c3892dc", null ],
       [ "prum", "namespaceprofiling.html#aa5219cdd52ceebc8e8062686f375bb2e", null ],
       [ "prumExp", "namespaceprofiling.html#a37b283c15b9dbb8e2ba529cab5d26b88", null ]
-    ] ]
+    ] ],
+    [ "test_calc_lib", "namespacetest__calc__lib.html", "namespacetest__calc__lib" ]
 ];

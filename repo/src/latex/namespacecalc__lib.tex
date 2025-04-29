@@ -1,0 +1,131 @@
+\doxysection{calc\+\_\+lib Namespace Reference}
+\hypertarget{namespacecalc__lib}{}\label{namespacecalc__lib}\index{calc\_lib@{calc\_lib}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a6457ae41696082f1cb72538b23966b35}{add}} (num1, num2)
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a14243826848575297bc35c8fbf957d9d}{sub}} (num1, num2)
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a7db5e5f1216900c05b54329e611f75d4}{mul}} (num1, num2)
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a727a4270be6e178a633d6242393c6220}{div}} (num1, num2)
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a3faa8a9bbe33e1d704200fd84b922608}{factorial}} (num1)
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a5216dec23ea9109e55cad494402ab599}{expon}} (num1, num2)
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a0e4a3922d65b4a1832c56d2cc55c5482}{sqr}} (num1, num2)
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a7453442d8b95cdf8cd0252a4782c1ca7}{absolute}} (num1)
+\item 
+\mbox{\hyperlink{namespacecalc__lib_a4a43a0c6e913799ca3b894dfff0f4050}{fib}} (num1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    @file calc_lib.py
+    @brief knihovna matematických funkcí
+    @details jsou volány funkce které načítají jedno nebo dvě čísla a ověřuje jejich integritu s tím že vrací jedno číslo jako int nebo float.
+    @author Adam Kadlec
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecalc__lib_a7453442d8b95cdf8cd0252a4782c1ca7}\index{calc\_lib@{calc\_lib}!absolute@{absolute}}
+\index{absolute@{absolute}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{absolute()}{absolute()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a7453442d8b95cdf8cd0252a4782c1ca7} 
+calc\+\_\+lib.\+absolute (\begin{DoxyParamCaption}\item[{}]{num1}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Vrátí absolutní hodnotu čísla.
+@param num1 Číslo (int nebo float).
+@return Vrací absolutní hodnotu, nebo chybovou hlášku (float nebo str).
+\end{DoxyVerb}
+ \Hypertarget{namespacecalc__lib_a6457ae41696082f1cb72538b23966b35}\index{calc\_lib@{calc\_lib}!add@{add}}
+\index{add@{add}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a6457ae41696082f1cb72538b23966b35} 
+calc\+\_\+lib.\+add (\begin{DoxyParamCaption}\item[{}]{num1}{, }\item[{}]{num2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Sčítá dvě čísla.
+@param num1 První číslo (int nebo float).
+@param num2 Druhé číslo (int nebo float).
+@return Vrací součet dvou čísel, nebo chybovou hlášku (int, float nebo str).
+\end{DoxyVerb}
+ \Hypertarget{namespacecalc__lib_a727a4270be6e178a633d6242393c6220}\index{calc\_lib@{calc\_lib}!div@{div}}
+\index{div@{div}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{div()}{div()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a727a4270be6e178a633d6242393c6220} 
+calc\+\_\+lib.\+div (\begin{DoxyParamCaption}\item[{}]{num1}{, }\item[{}]{num2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Dělí dvě čísla.
+@param num1 Dělenec (int nebo float).
+@param num2 Dělitel (int nebo float).
+@return Vrací podíl dvou čísel, nebo chybovou hlášku (float nebo str).
+\end{DoxyVerb}
+ \Hypertarget{namespacecalc__lib_a5216dec23ea9109e55cad494402ab599}\index{calc\_lib@{calc\_lib}!expon@{expon}}
+\index{expon@{expon}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{expon()}{expon()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a5216dec23ea9109e55cad494402ab599} 
+calc\+\_\+lib.\+expon (\begin{DoxyParamCaption}\item[{}]{num1}{, }\item[{}]{num2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Umocní číslo.
+@param num1 Základ (int nebo float).
+@param num2 Exponent (int nebo float).
+@return Vrací výsledek umocnění, nebo chybovou hlášku (float nebo str).
+\end{DoxyVerb}
+ \Hypertarget{namespacecalc__lib_a3faa8a9bbe33e1d704200fd84b922608}\index{calc\_lib@{calc\_lib}!factorial@{factorial}}
+\index{factorial@{factorial}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{factorial()}{factorial()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a3faa8a9bbe33e1d704200fd84b922608} 
+calc\+\_\+lib.\+factorial (\begin{DoxyParamCaption}\item[{}]{num1}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Vypočítá faktoriál čísla.
+@param num1 Celé číslo (int).
+@return Vrací faktoriál čísla, nebo chybovou hlášku (int nebo str).
+\end{DoxyVerb}
+ \Hypertarget{namespacecalc__lib_a4a43a0c6e913799ca3b894dfff0f4050}\index{calc\_lib@{calc\_lib}!fib@{fib}}
+\index{fib@{fib}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{fib()}{fib()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a4a43a0c6e913799ca3b894dfff0f4050} 
+calc\+\_\+lib.\+fib (\begin{DoxyParamCaption}\item[{}]{num1}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Vypočítá Fibonacciho číslo na dané pozici.
+@param num1 Pořadí v posloupnosti (int).
+@return Vrací číslo z Fibonacciho posloupnosti, nebo chybovou hlášku (int nebo str).
+\end{DoxyVerb}
+ \Hypertarget{namespacecalc__lib_a7db5e5f1216900c05b54329e611f75d4}\index{calc\_lib@{calc\_lib}!mul@{mul}}
+\index{mul@{mul}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{mul()}{mul()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a7db5e5f1216900c05b54329e611f75d4} 
+calc\+\_\+lib.\+mul (\begin{DoxyParamCaption}\item[{}]{num1}{, }\item[{}]{num2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Násobí dvě čísla.
+@param num1 První číslo (int nebo float).
+@param num2 Druhé číslo (int nebo float).
+@return Vrací součin dvou čísel, nebo chybovou hlášku (int, float nebo str).
+\end{DoxyVerb}
+ \Hypertarget{namespacecalc__lib_a0e4a3922d65b4a1832c56d2cc55c5482}\index{calc\_lib@{calc\_lib}!sqr@{sqr}}
+\index{sqr@{sqr}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{sqr()}{sqr()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a0e4a3922d65b4a1832c56d2cc55c5482} 
+calc\+\_\+lib.\+sqr (\begin{DoxyParamCaption}\item[{}]{num1}{, }\item[{}]{num2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Vypočítá odmocninu čísla.
+@param num1 Odmocňované číslo (int nebo float).
+@param num2 Kolikátá odmocnina (int nebo float).
+@return Vrací výsledek odmocnění, nebo chybovou hlášku (float nebo str).
+\end{DoxyVerb}
+ \Hypertarget{namespacecalc__lib_a14243826848575297bc35c8fbf957d9d}\index{calc\_lib@{calc\_lib}!sub@{sub}}
+\index{sub@{sub}!calc\_lib@{calc\_lib}}
+\doxysubsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily \label{namespacecalc__lib_a14243826848575297bc35c8fbf957d9d} 
+calc\+\_\+lib.\+sub (\begin{DoxyParamCaption}\item[{}]{num1}{, }\item[{}]{num2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Odečítá dvě čísla.
+@param num1 První číslo (int nebo float).
+@param num2 Druhé číslo (int nebo float).
+@return Vrací rozdíl dvou čísel, nebo chybovou hlášku (int, float nebo str).
+\end{DoxyVerb}
+ 
