@@ -1,6 +1,0 @@
-var hierarchy =
-[
-    [ "unittest.TestCase", null, [
-      [ "test_calc_lib.TestMyMathLib", "classtest__calc__lib_1_1_test_my_math_lib.html", null ]
-    ] ]
-];

@@ -1,0 +1,354 @@
+\doxysection{mockup.\+Calculator Class Reference}
+\hypertarget{classmockup_1_1_calculator}{}\label{classmockup_1_1_calculator}\index{mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ad551c87c17fe5c8d81faa1d3a523209d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmockup_1_1_calculator_a01ce68fc4d24e81defc7eb25e67cc850}{root}})
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ad8013f6fccd9d176f9888d9308b6fbd8}{create\+\_\+menu}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a7f4589f97de728055f83e765c6833fac}{show\+\_\+help}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_acc84bf3368bdc1bb883c9c371ff5714c}{show\+\_\+about}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a0bb214236de00b63ff5236e3f449a1a6}{setup\+\_\+keyboard\+\_\+bindings}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ab92f37b9a39e4aa04fdf070f55d9868e}{create\+\_\+buttons}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a3d11cdb3df1a42787df0396f9d7f4fe6}{create\+\_\+button}} (self, text, row, column, columnspan=1, rowspan=1, command=None, bg="{}\#e0e0e0"{})
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a67cdfa1a2b0a34235f7821f4a6a782bc}{append\+\_\+number}} (self, number)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ade7594998488116682a83ada9bc1aaa2}{prepare\+\_\+operation}} (self, operation)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a1b1bdfa089fd7557eaee023af7bd8bc3}{clear}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_aaa0e44c685f69ca59a12044f0cbd221b}{backspace}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a89dee7b8395f101e25832dc7fa34e266}{calculate\+\_\+factorial}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a97a96b709fff30c8c7ea9d714c622335}{calculate\+\_\+fibonacci}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ad5a21c5a6a9a1b9320027bbc85b42ece}{calculate\+\_\+absolute}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_acb486ebe20a1c014a0593627d8dc948e}{evaluate}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a2d0caf9ff79fb60c7d71194ec958643d}{display\+\_\+error}} (self, error\+\_\+code)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a8f86d150ce564e8c6a986afceb1f2a31}{negate}} (self)
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ac4f809d1e5109c2695a9b17cacfd40f8}{update\+\_\+display}} (self, evaluated=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a01ce68fc4d24e81defc7eb25e67cc850}{root}} = root
+\item 
+str \mbox{\hyperlink{classmockup_1_1_calculator_aa5f092a1e9096e85c0a9ef4fe8fdb070}{current\+\_\+expression}} = "{}"{}
+\item 
+str \mbox{\hyperlink{classmockup_1_1_calculator_a0bafd49eb9885e05d18e479f19ae44ff}{total\+\_\+expression}} = "{}"{}
+\item 
+str \mbox{\hyperlink{classmockup_1_1_calculator_a921d3ad960f759795ec8f9a1dfdd666a}{pending\+\_\+operation}} = None
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ae2b738e5a003044a1d185781e81ea227}{first\+\_\+number}} = None
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ab1a4bc9fe086afd07b649956a5f8b590}{second\+\_\+number}} = None
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ab7c5c94cbde399acdebb6762d787f16c}{result}} = None
+\item 
+bool \mbox{\hyperlink{classmockup_1_1_calculator_a99666ab730ae8ffd6a457c382a983c7a}{expecting\+\_\+second\+\_\+number}} = False
+\item 
+bool \mbox{\hyperlink{classmockup_1_1_calculator_a7426396e1e66b33dab8329131b086927}{just\+\_\+evaluated}} = False
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a3da92e8366dc2b3bfec49787a57133ef}{display\+\_\+frame}} = tk.\+Frame(self.\+root, height=100, bg="{}\#f0f0f0"{})
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_abe7d8bd1b2ce81fa68e7d043642d3a91}{expression\+\_\+label}}
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_a64ce8a03ee91a2b080bf2c3a290ff3dd}{result\+\_\+label}}
+\item 
+\mbox{\hyperlink{classmockup_1_1_calculator_ac0fec653025844c146d67137d644b75e}{buttons\+\_\+frame}} = tk.\+Frame(self.\+root, bg="{}\#f0f0f0"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@class Calculator
+@brief Grafická kalkulačka s podporou základních a pokročilých matematických operací.
+
+@details Tato třída implementuje kalkulačku s grafickým uživatelským rozhraním pomocí Tkinteru.
+Poskytuje standardní aritmetické operace, pokročilé funkce jako faktoriál a Fibonacciho posloupnost
+a podporuje jak klikání na tlačítka, tak zadávání z klávesnice.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmockup_1_1_calculator_ad551c87c17fe5c8d81faa1d3a523209d}\index{mockup.Calculator@{mockup.Calculator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ad551c87c17fe5c8d81faa1d3a523209d} 
+mockup.\+Calculator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{root}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Inicializace grafického rozhraní kalkulačky.
+
+@details Nastaví hlavní okno, zobrazovací oblasti, tlačítka a vazby na klávesnici.
+
+@param root Hlavní okno Tkinteru.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmockup_1_1_calculator_a67cdfa1a2b0a34235f7821f4a6a782bc}\index{mockup.Calculator@{mockup.Calculator}!append\_number@{append\_number}}
+\index{append\_number@{append\_number}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{append\_number()}{append\_number()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a67cdfa1a2b0a34235f7821f4a6a782bc} 
+mockup.\+Calculator.\+append\+\_\+number (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{number}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Přidání číslice nebo desetinné čárky do aktuálního výrazu.
+
+@details Zpracovává logiku pro různé stavy: zahájení nového výpočtu,
+zadávání prvního čísla nebo zadávání druhého čísla.
+
+@param number Číslice nebo desetinná čárka, která se má přidat.
+\end{DoxyVerb}
+ \Hypertarget{classmockup_1_1_calculator_aaa0e44c685f69ca59a12044f0cbd221b}\index{mockup.Calculator@{mockup.Calculator}!backspace@{backspace}}
+\index{backspace@{backspace}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{backspace()}{backspace()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_aaa0e44c685f69ca59a12044f0cbd221b} 
+mockup.\+Calculator.\+backspace (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_ad5a21c5a6a9a1b9320027bbc85b42ece}\index{mockup.Calculator@{mockup.Calculator}!calculate\_absolute@{calculate\_absolute}}
+\index{calculate\_absolute@{calculate\_absolute}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{calculate\_absolute()}{calculate\_absolute()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ad5a21c5a6a9a1b9320027bbc85b42ece} 
+mockup.\+Calculator.\+calculate\+\_\+absolute (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_a89dee7b8395f101e25832dc7fa34e266}\index{mockup.Calculator@{mockup.Calculator}!calculate\_factorial@{calculate\_factorial}}
+\index{calculate\_factorial@{calculate\_factorial}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{calculate\_factorial()}{calculate\_factorial()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a89dee7b8395f101e25832dc7fa34e266} 
+mockup.\+Calculator.\+calculate\+\_\+factorial (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_a97a96b709fff30c8c7ea9d714c622335}\index{mockup.Calculator@{mockup.Calculator}!calculate\_fibonacci@{calculate\_fibonacci}}
+\index{calculate\_fibonacci@{calculate\_fibonacci}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{calculate\_fibonacci()}{calculate\_fibonacci()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a97a96b709fff30c8c7ea9d714c622335} 
+mockup.\+Calculator.\+calculate\+\_\+fibonacci (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_a1b1bdfa089fd7557eaee023af7bd8bc3}\index{mockup.Calculator@{mockup.Calculator}!clear@{clear}}
+\index{clear@{clear}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a1b1bdfa089fd7557eaee023af7bd8bc3} 
+mockup.\+Calculator.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_a3d11cdb3df1a42787df0396f9d7f4fe6}\index{mockup.Calculator@{mockup.Calculator}!create\_button@{create\_button}}
+\index{create\_button@{create\_button}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{create\_button()}{create\_button()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a3d11cdb3df1a42787df0396f9d7f4fe6} 
+mockup.\+Calculator.\+create\+\_\+button (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{, }\item[{}]{row}{, }\item[{}]{column}{, }\item[{}]{columnspan}{ = {\ttfamily 1}, }\item[{}]{rowspan}{ = {\ttfamily 1}, }\item[{}]{command}{ = {\ttfamily None}, }\item[{}]{bg}{ = {\ttfamily "{}\#e0e0e0"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Vytvoření jednotlivého tlačítka v kalkulačce.
+
+@param text Text, který se zobrazí na tlačítku.
+@param row Pozice řádku v mřížce.
+@param column Pozice sloupce v mřížce.
+@param columnspan Počet sloupců, které tlačítko zabírá (výchozí: 1).
+@param rowspan Počet řádků, které tlačítko zabírá (výchozí: 1).
+@param command Funkce, která se zavolá po kliknutí na tlačítko (výchozí: None).
+@param bg Barva pozadí tlačítka (výchozí: "#e0e0e0").
+
+@return Objekt vytvořeného tlačítka.
+\end{DoxyVerb}
+ \Hypertarget{classmockup_1_1_calculator_ab92f37b9a39e4aa04fdf070f55d9868e}\index{mockup.Calculator@{mockup.Calculator}!create\_buttons@{create\_buttons}}
+\index{create\_buttons@{create\_buttons}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{create\_buttons()}{create\_buttons()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ab92f37b9a39e4aa04fdf070f55d9868e} 
+mockup.\+Calculator.\+create\+\_\+buttons (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Vytvoření a umístění všech tlačítek kalkulačky.
+
+@details Nastaví rozložení všech tlačítek kalkulačky, včetně čísel, operátorů
+a speciálních funkcí jako Fibonacciho posloupnost a absolutní hodnota.
+\end{DoxyVerb}
+ \Hypertarget{classmockup_1_1_calculator_ad8013f6fccd9d176f9888d9308b6fbd8}\index{mockup.Calculator@{mockup.Calculator}!create\_menu@{create\_menu}}
+\index{create\_menu@{create\_menu}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{create\_menu()}{create\_menu()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ad8013f6fccd9d176f9888d9308b6fbd8} 
+mockup.\+Calculator.\+create\+\_\+menu (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_a2d0caf9ff79fb60c7d71194ec958643d}\index{mockup.Calculator@{mockup.Calculator}!display\_error@{display\_error}}
+\index{display\_error@{display\_error}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{display\_error()}{display\_error()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a2d0caf9ff79fb60c7d71194ec958643d} 
+mockup.\+Calculator.\+display\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{error\+\_\+code}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_acb486ebe20a1c014a0593627d8dc948e}\index{mockup.Calculator@{mockup.Calculator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_acb486ebe20a1c014a0593627d8dc948e} 
+mockup.\+Calculator.\+evaluate (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_a8f86d150ce564e8c6a986afceb1f2a31}\index{mockup.Calculator@{mockup.Calculator}!negate@{negate}}
+\index{negate@{negate}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{negate()}{negate()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a8f86d150ce564e8c6a986afceb1f2a31} 
+mockup.\+Calculator.\+negate (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_ade7594998488116682a83ada9bc1aaa2}\index{mockup.Calculator@{mockup.Calculator}!prepare\_operation@{prepare\_operation}}
+\index{prepare\_operation@{prepare\_operation}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{prepare\_operation()}{prepare\_operation()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ade7594998488116682a83ada9bc1aaa2} 
+mockup.\+Calculator.\+prepare\+\_\+operation (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Nastavení binární operace mezi dvěma čísly.
+
+@details Uloží první číslo a typ operace, aktualizuje displej
+a připraví kalkulačku na zadání druhého čísla.
+
+@param operation Řetězec reprezentující operaci ("add", "sub" atd.).
+\end{DoxyVerb}
+ \Hypertarget{classmockup_1_1_calculator_a0bb214236de00b63ff5236e3f449a1a6}\index{mockup.Calculator@{mockup.Calculator}!setup\_keyboard\_bindings@{setup\_keyboard\_bindings}}
+\index{setup\_keyboard\_bindings@{setup\_keyboard\_bindings}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{setup\_keyboard\_bindings()}{setup\_keyboard\_bindings()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a0bb214236de00b63ff5236e3f449a1a6} 
+mockup.\+Calculator.\+setup\+\_\+keyboard\+\_\+bindings (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Nastavení klávesových zkratek pro operace kalkulačky.
+
+@details Mapuje klávesy na funkce kalkulačky:
+- Číselné klávesy (0–9) pro zadávání číslic
+- Operátory (+, -, *, /, ^) pro základní operace
+- Funkční klávesy (!, a, f) pro faktoriál, absolutní hodnotu a Fibonacciho posloupnost
+- Řídicí klávesy (Enter, Backspace, Escape) pro vyhodnocení, mazání a vymazání
+\end{DoxyVerb}
+ \Hypertarget{classmockup_1_1_calculator_acc84bf3368bdc1bb883c9c371ff5714c}\index{mockup.Calculator@{mockup.Calculator}!show\_about@{show\_about}}
+\index{show\_about@{show\_about}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{show\_about()}{show\_about()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_acc84bf3368bdc1bb883c9c371ff5714c} 
+mockup.\+Calculator.\+show\+\_\+about (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_a7f4589f97de728055f83e765c6833fac}\index{mockup.Calculator@{mockup.Calculator}!show\_help@{show\_help}}
+\index{show\_help@{show\_help}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{show\_help()}{show\_help()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a7f4589f97de728055f83e765c6833fac} 
+mockup.\+Calculator.\+show\+\_\+help (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmockup_1_1_calculator_ac4f809d1e5109c2695a9b17cacfd40f8}\index{mockup.Calculator@{mockup.Calculator}!update\_display@{update\_display}}
+\index{update\_display@{update\_display}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{update\_display()}{update\_display()}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ac4f809d1e5109c2695a9b17cacfd40f8} 
+mockup.\+Calculator.\+update\+\_\+display (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{evaluated}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Aktualizace displeje kalkulačky aktuálními hodnotami.
+
+@details Aktualizuje jak displej pro výraz (ukazuje výpočet), tak i displej pro výsledek (ukazuje aktuální číslo nebo výsledek).
+
+@param evaluated Boolean určující, zda byl výraz právě vyhodnocen (výchozí: False).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmockup_1_1_calculator_ac0fec653025844c146d67137d644b75e}\index{mockup.Calculator@{mockup.Calculator}!buttons\_frame@{buttons\_frame}}
+\index{buttons\_frame@{buttons\_frame}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{buttons\_frame}{buttons\_frame}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ac0fec653025844c146d67137d644b75e} 
+mockup.\+Calculator.\+buttons\+\_\+frame = tk.\+Frame(self.\+root, bg="{}\#f0f0f0"{})}
+
+\Hypertarget{classmockup_1_1_calculator_aa5f092a1e9096e85c0a9ef4fe8fdb070}\index{mockup.Calculator@{mockup.Calculator}!current\_expression@{current\_expression}}
+\index{current\_expression@{current\_expression}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{current\_expression}{current\_expression}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_aa5f092a1e9096e85c0a9ef4fe8fdb070} 
+str mockup.\+Calculator.\+current\+\_\+expression = "{}"{}}
+
+\Hypertarget{classmockup_1_1_calculator_a3da92e8366dc2b3bfec49787a57133ef}\index{mockup.Calculator@{mockup.Calculator}!display\_frame@{display\_frame}}
+\index{display\_frame@{display\_frame}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{display\_frame}{display\_frame}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a3da92e8366dc2b3bfec49787a57133ef} 
+mockup.\+Calculator.\+display\+\_\+frame = tk.\+Frame(self.\+root, height=100, bg="{}\#f0f0f0"{})}
+
+\Hypertarget{classmockup_1_1_calculator_a99666ab730ae8ffd6a457c382a983c7a}\index{mockup.Calculator@{mockup.Calculator}!expecting\_second\_number@{expecting\_second\_number}}
+\index{expecting\_second\_number@{expecting\_second\_number}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{expecting\_second\_number}{expecting\_second\_number}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a99666ab730ae8ffd6a457c382a983c7a} 
+bool mockup.\+Calculator.\+expecting\+\_\+second\+\_\+number = False}
+
+\Hypertarget{classmockup_1_1_calculator_abe7d8bd1b2ce81fa68e7d043642d3a91}\index{mockup.Calculator@{mockup.Calculator}!expression\_label@{expression\_label}}
+\index{expression\_label@{expression\_label}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{expression\_label}{expression\_label}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_abe7d8bd1b2ce81fa68e7d043642d3a91} 
+mockup.\+Calculator.\+expression\+\_\+label}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ tk.Label(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.display\_frame,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ text=\textcolor{stringliteral}{"{}"{}},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ font=(\textcolor{stringliteral}{"{}Arial"{}},\ 14),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ anchor=\textcolor{stringliteral}{"{}e"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ bg=\textcolor{stringliteral}{"{}\#f0f0f0"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ fg=\textcolor{stringliteral}{"{}\#505050"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classmockup_1_1_calculator_ae2b738e5a003044a1d185781e81ea227}\index{mockup.Calculator@{mockup.Calculator}!first\_number@{first\_number}}
+\index{first\_number@{first\_number}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{first\_number}{first\_number}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ae2b738e5a003044a1d185781e81ea227} 
+mockup.\+Calculator.\+first\+\_\+number = None}
+
+\Hypertarget{classmockup_1_1_calculator_a7426396e1e66b33dab8329131b086927}\index{mockup.Calculator@{mockup.Calculator}!just\_evaluated@{just\_evaluated}}
+\index{just\_evaluated@{just\_evaluated}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{just\_evaluated}{just\_evaluated}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a7426396e1e66b33dab8329131b086927} 
+bool mockup.\+Calculator.\+just\+\_\+evaluated = False}
+
+\Hypertarget{classmockup_1_1_calculator_a921d3ad960f759795ec8f9a1dfdd666a}\index{mockup.Calculator@{mockup.Calculator}!pending\_operation@{pending\_operation}}
+\index{pending\_operation@{pending\_operation}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{pending\_operation}{pending\_operation}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a921d3ad960f759795ec8f9a1dfdd666a} 
+str mockup.\+Calculator.\+pending\+\_\+operation = None}
+
+\Hypertarget{classmockup_1_1_calculator_ab7c5c94cbde399acdebb6762d787f16c}\index{mockup.Calculator@{mockup.Calculator}!result@{result}}
+\index{result@{result}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ab7c5c94cbde399acdebb6762d787f16c} 
+mockup.\+Calculator.\+result = None}
+
+\Hypertarget{classmockup_1_1_calculator_a64ce8a03ee91a2b080bf2c3a290ff3dd}\index{mockup.Calculator@{mockup.Calculator}!result\_label@{result\_label}}
+\index{result\_label@{result\_label}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{result\_label}{result\_label}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a64ce8a03ee91a2b080bf2c3a290ff3dd} 
+mockup.\+Calculator.\+result\+\_\+label}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ tk.Label(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.display\_frame,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ text=\textcolor{stringliteral}{"{}0"{}},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ font=(\textcolor{stringliteral}{"{}Arial"{}},\ 24,\ \textcolor{stringliteral}{"{}bold"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ anchor=\textcolor{stringliteral}{"{}e"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ bg=\textcolor{stringliteral}{"{}\#f0f0f0"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classmockup_1_1_calculator_a01ce68fc4d24e81defc7eb25e67cc850}\index{mockup.Calculator@{mockup.Calculator}!root@{root}}
+\index{root@{root}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a01ce68fc4d24e81defc7eb25e67cc850} 
+mockup.\+Calculator.\+root = root}
+
+\Hypertarget{classmockup_1_1_calculator_ab1a4bc9fe086afd07b649956a5f8b590}\index{mockup.Calculator@{mockup.Calculator}!second\_number@{second\_number}}
+\index{second\_number@{second\_number}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{second\_number}{second\_number}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_ab1a4bc9fe086afd07b649956a5f8b590} 
+mockup.\+Calculator.\+second\+\_\+number = None}
+
+\Hypertarget{classmockup_1_1_calculator_a0bafd49eb9885e05d18e479f19ae44ff}\index{mockup.Calculator@{mockup.Calculator}!total\_expression@{total\_expression}}
+\index{total\_expression@{total\_expression}!mockup.Calculator@{mockup.Calculator}}
+\doxysubsubsection{\texorpdfstring{total\_expression}{total\_expression}}
+{\footnotesize\ttfamily \label{classmockup_1_1_calculator_a0bafd49eb9885e05d18e479f19ae44ff} 
+str mockup.\+Calculator.\+total\+\_\+expression = "{}"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mockup_8py}{mockup.\+py}}\end{DoxyCompactItemize}
