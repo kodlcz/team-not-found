@@ -14,7 +14,12 @@ all:
 	$(MAKE) build
 
 build: 
-	python -m PyInstaller --onefile --noconsole $(MAIN)
+	python -m PyInstaller  --noconsole $(MAIN)
+	python -m PyInstaller  $(PROF)
+	$(MAKE) clean
+## spustí build jen s exe souborem jako výstup
+buildno:
+	python -m PyInstaller --onefile  --noconsole $(MAIN)
 	python -m PyInstaller --onefile $(PROF)
 	$(MAKE) clean
 ## Spustí testy pomocí unittest
