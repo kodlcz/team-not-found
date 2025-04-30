@@ -33,12 +33,10 @@ var namespaces_dup =
       [ "root", "namespacemockup.html#ae68ee5cc48fc3222d21c533caa754b34", null ],
       [ "row", "namespacemockup.html#a30fdb1dad8d406d2667de8fd433a7493", null ]
     ] ],
-    [ "profiling", "namespaceprofiling.html", [
-      [ "count", "namespaceprofiling.html#aac6605dbe756747512b373cd8be2fe06", null ],
-      [ "numCount", "namespaceprofiling.html#aaa308b0ab53d724a1a4175d23db0fc2d", null ],
-      [ "nums", "namespaceprofiling.html#ae9e6a8747426c21e895a16c83c3892dc", null ],
-      [ "prum", "namespaceprofiling.html#aa5219cdd52ceebc8e8062686f375bb2e", null ],
-      [ "prumExp", "namespaceprofiling.html#a37b283c15b9dbb8e2ba529cab5d26b88", null ]
+    [ "stddev", "namespacestddev.html", [
+      [ "calculate_stddev", "namespacestddev.html#a8b928be27091da0993414b9741dadf45", null ],
+      [ "run_profiled_calculations", "namespacestddev.html#a92380d047a94d2b2b76a049baf789bd2", null ],
+      [ "INPUT_SIZE", "namespacestddev.html#a3ca4aa5560f36c325a455fa7b0c7c52e", null ]
     ] ],
     [ "test_calc_lib", "namespacetest__calc__lib.html", "namespacetest__calc__lib" ]
 ];

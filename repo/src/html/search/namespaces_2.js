@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['profiling_0',['profiling',['../namespaceprofiling.html',1,'']]]
+  ['stddev_0',['stddev',['../namespacestddev.html',1,'']]]
 ];
