@@ -1,3 +1,9 @@
+"""
+    @file calc_lib.py
+    @brief knihovna matematických funkcí
+    @details jsou volány funkce které načítají jedno nebo dvě čísla a ověřuje jejich integritu s tím že vrací jedno číslo jako int nebo float.
+    @author Adam Kadlec
+    """
 def add(num1, num2):
     """
     @brief Sčítá dvě čísla.
@@ -6,7 +12,7 @@ def add(num1, num2):
     @return Vrací součet dvou čísel, nebo chybovou hlášku (int, float nebo str).
     """
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
-        return "chyba 1"
+        return "chyba_1"
     return num1 + num2
 
 
@@ -18,7 +24,7 @@ def sub(num1, num2):
     @return Vrací rozdíl dvou čísel, nebo chybovou hlášku (int, float nebo str).
     """
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
-        return "chyba 1"
+        return "chyba_1"
     return num1 - num2
 
 
@@ -30,7 +36,7 @@ def mul(num1, num2):
     @return Vrací součin dvou čísel, nebo chybovou hlášku (int, float nebo str).
     """
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
-        return "chyba 1"
+        return "chyba_1"
     return num1 * num2
 
 
@@ -42,9 +48,9 @@ def div(num1, num2):
     @return Vrací podíl dvou čísel, nebo chybovou hlášku (float nebo str).
     """
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
-        return "chyba 1"
+        return "chyba_1"
     if num2 == 0:
-        return "chyba 2"
+        return "chyba_2"
     return num1 / num2
 
 
@@ -55,17 +61,17 @@ def factorial(num1):
     @return Vrací faktoriál čísla, nebo chybovou hlášku (int nebo str).
     """
     if not isinstance(num1, int):
-        return "chyba 3"
+        return "chyba_3"
     if num1 < 0:
-        return "chyba 4"
-    result = 1
+        return "chyba_4"
+    num = 1
     while num1 > 1:
-        result *= num1
+        num *= num1
         num1 -= 1
-    return result
+    return num
 
 
-def power(num1, num2):
+def expon(num1, num2):
     """
     @brief Umocní číslo.
     @param num1 Základ (int nebo float).
@@ -73,11 +79,11 @@ def power(num1, num2):
     @return Vrací výsledek umocnění, nebo chybovou hlášku (float nebo str).
     """
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
-        return "chyba 1"
+        return "chyba_1"
     return num1 ** num2
 
 
-def root(num1, num2):
+def sqr(num1, num2):
     """
     @brief Vypočítá odmocninu čísla.
     @param num1 Odmocňované číslo (int nebo float).
@@ -85,9 +91,11 @@ def root(num1, num2):
     @return Vrací výsledek odmocnění, nebo chybovou hlášku (float nebo str).
     """
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
-        return "chyba 1"
+        return "chyba_1"
     if num2 == 0:
-        return "chyba 2"
+        return "chyba_2"
+    if num1 < 0:
+        return "chyba_5"
     return num1 ** (1 / num2)
 
 
@@ -98,21 +106,29 @@ def absolute(num1):
     @return Vrací absolutní hodnotu, nebo chybovou hlášku (float nebo str).
     """
     if not isinstance(num1, (int, float)):
-        return "chyba 1"
-    return abs(num1)
+        return "chyba_1"
+    if num1 < 0:
+        num1 *= -1
+    return num1
 
 
-def fibonacci(num1):
+def fib(num1):
     """
     @brief Vypočítá Fibonacciho číslo na dané pozici.
     @param num1 Pořadí v posloupnosti (int).
     @return Vrací číslo z Fibonacciho posloupnosti, nebo chybovou hlášku (int nebo str).
     """
-    if not isinstance(num1, int):
-        return "chyba 1"
+    if not isinstance(num1,(int,float)):
+        return "chyba_1"
     if num1 < 0:
-        return "chyba 4"
-    a, b = 0, 1
-    for _ in range(num1):
-        a, b = b, a + b
-    return a
+        return "chyba_4"
+    num = 0 
+    num0 = 1
+    if num1 == 0:
+        return 0
+    while num1 > 0:
+            num00 = num
+            num += num0
+            num0 = num00
+            num1 -= 1
+    return num
