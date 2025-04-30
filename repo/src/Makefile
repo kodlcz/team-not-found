@@ -13,14 +13,14 @@ all:
 	pip install -r requirements.txt || true
 	$(MAKE) build
 
-build: 
-	python -m PyInstaller  --noconsole $(MAIN)
-	python -m PyInstaller  $(PROF)
+buildw: 
+	python -m PyInstaller --distpath ../../install/exe --noconsole $(MAIN)
+	python -m PyInstaller --distpath ../../install/exe $(PROF)
 	$(MAKE) clean
 ## spustí build jen s exe souborem jako výstup
-buildno:
-	python -m PyInstaller --onefile  --noconsole $(MAIN)
-	python -m PyInstaller --onefile $(PROF)
+build:
+	python -m PyInstaller --distpath ../../install/exe --onefile --noconsole $(MAIN)
+	python -m PyInstaller --distpath ../../install/exe --onefile $(PROF)
 	$(MAKE) clean
 ## Spustí testy pomocí unittest
 test:
