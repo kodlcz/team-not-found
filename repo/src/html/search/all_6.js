@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['numcount_0',['numCount',['../namespaceprofiling.html#aaa308b0ab53d724a1a4175d23db0fc2d',1,'profiling']]],
-  ['nums_1',['nums',['../namespaceprofiling.html#ae9e6a8747426c21e895a16c83c3892dc',1,'profiling']]]
+  ['input_5fsize_0',['INPUT_SIZE',['../namespacestddev.html#a3ca4aa5560f36c325a455fa7b0c7c52e',1,'stddev']]],
+  ['insert_5fchar_1',['insert_char',['../namespacemockup.html#a8096a5ab6a4e6899cba185feb602a84b',1,'mockup']]]
 ];

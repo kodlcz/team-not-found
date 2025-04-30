@@ -1,0 +1,58 @@
+\doxysection{stddev Namespace Reference}
+\hypertarget{namespacestddev}{}\label{namespacestddev}\index{stddev@{stddev}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacestddev_a8b928be27091da0993414b9741dadf45}{calculate\+\_\+stddev}} ()
+\begin{DoxyCompactList}\small\item\em Funkce pro výpočet výběrové směrodatné odchylky ze vstupu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacestddev_a92380d047a94d2b2b76a049baf789bd2}{run\+\_\+profiled\+\_\+calculations}} ()
+\begin{DoxyCompactList}\small\item\em Spuštění výpočtu s měřením výkonnosti pomocí c\+Profile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacestddev_a3ca4aa5560f36c325a455fa7b0c7c52e}{INPUT\+\_\+\+SIZE}} = 10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file profiling.py
+@author Adam Kadlec
+@brief Výpočet výběrové směrodatné odchylky s náhodně generovanými vstupy a profilováním.
+@details Tento skript načítá číselné hodnoty ze standardního vstupu, počítá výběrovou směrodatnou odchylku pomocí vlastní matematické knihovny
+a zároveň měří výkon pomocí profileru cProfile.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacestddev_a8b928be27091da0993414b9741dadf45}\index{stddev@{stddev}!calculate\_stddev@{calculate\_stddev}}
+\index{calculate\_stddev@{calculate\_stddev}!stddev@{stddev}}
+\doxysubsubsection{\texorpdfstring{calculate\_stddev()}{calculate\_stddev()}}
+{\footnotesize\ttfamily \label{namespacestddev_a8b928be27091da0993414b9741dadf45} 
+stddev.\+calculate\+\_\+stddev (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Funkce pro výpočet výběrové směrodatné odchylky ze vstupu. 
+
+Načítá čísla ze stdin, počítá jejich součet, průměr a průměr čtverců, poté aplikuje vzorec pro směrodatnou odchylku. \begin{DoxyReturn}{Returns}
+Výsledek (směrodatná odchylka) se vypíše na standardní výstup. 
+\end{DoxyReturn}
+\Hypertarget{namespacestddev_a92380d047a94d2b2b76a049baf789bd2}\index{stddev@{stddev}!run\_profiled\_calculations@{run\_profiled\_calculations}}
+\index{run\_profiled\_calculations@{run\_profiled\_calculations}!stddev@{stddev}}
+\doxysubsubsection{\texorpdfstring{run\_profiled\_calculations()}{run\_profiled\_calculations()}}
+{\footnotesize\ttfamily \label{namespacestddev_a92380d047a94d2b2b76a049baf789bd2} 
+stddev.\+run\+\_\+profiled\+\_\+calculations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Spuštění výpočtu s měřením výkonnosti pomocí c\+Profile. 
+
+Profiluje funkci calculate\+\_\+stddev a ukládá výstup do souboru profiling\+\_\+output.\+txt. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacestddev_a3ca4aa5560f36c325a455fa7b0c7c52e}\index{stddev@{stddev}!INPUT\_SIZE@{INPUT\_SIZE}}
+\index{INPUT\_SIZE@{INPUT\_SIZE}!stddev@{stddev}}
+\doxysubsubsection{\texorpdfstring{INPUT\_SIZE}{INPUT\_SIZE}}
+{\footnotesize\ttfamily \label{namespacestddev_a3ca4aa5560f36c325a455fa7b0c7c52e} 
+int stddev.\+INPUT\+\_\+\+SIZE = 10}
+

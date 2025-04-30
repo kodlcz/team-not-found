@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mul_0',['mul',['../namespacecalc__lib.html#a7db5e5f1216900c05b54329e611f75d4',1,'calc_lib']]]
+  ['expon_0',['expon',['../namespacecalc__lib.html#a5216dec23ea9109e55cad494402ab599',1,'calc_lib']]]
 ];

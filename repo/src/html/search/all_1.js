@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['calc_5flib_0',['calc_lib',['../namespacecalc__lib.html',1,'']]],
-  ['calc_5flib_2epy_1',['calc_lib.py',['../calc__lib_8py.html',1,'']]],
-  ['count_2',['count',['../namespaceprofiling.html#aac6605dbe756747512b373cd8be2fe06',1,'profiling']]]
+  ['backspace_0',['backspace',['../namespacemockup.html#a1a020f633bd89cc77de549a5443ce00a',1,'mockup']]],
+  ['btn_1',['btn',['../namespacemockup.html#a0eb8e1098459af2517a75597398337b4',1,'mockup']]],
+  ['buttons_2',['buttons',['../namespacemockup.html#a577936ae9928a965f11aaba83673cb84',1,'mockup']]]
 ];
