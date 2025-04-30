@@ -1,41 +1,49 @@
 """
-    @file profiling.py
-    @author Adam Kadlec
-    @brief Výpočet výběrové směrodatné odchylky ze standardního vstupu pomocí vlastní matematické knihovny.
-    @details Program načítá čísla ze standardního vstupu, vypočítá aritmetický průměr a následně výběrovou směrodatnou odchylku.
-
-    @section usage Usage
-    Spuštění programu s čísly zadanými na standardním vstupu. Program načítá čísla, počítá průměr a následně výběrovou směrodatnou odchylku.
-
-    @param nums Seznam čísel, která se načítají ze vstupu.
-    @param numCount Součet všech čísel načtených ze vstupu.
-    @param count Počet načtených čísel.
-
-    @return Vrací výběrovou směrodatnou odchylku pomocí výpisu na stdout.
-
+@file profiling.py
+@author Adam Kadlec
+@brief Výpočet výběrové směrodatné odchylky s náhodně generovanými vstupy a profilováním.
 """
-from calc_lib import *
-import sys
-nums = []
-numCount = 0
-count = 0
-for val in sys.stdin.read().split():
-## @brief načítá čísla ze stdin a kontroluje zda se jedná o číslo.
-    try:
-        nums.append(float(val))
-        ## @brief ukládá čísla do listu nums
-        numCount = add(numCount,float(val))
-        ## @brief počítá celkovou hodnotu všech čísel
-        count = add(count,1)
-        ## @brief počítá kolik čísel načte
-    except ValueError:
-        print("zadané špatné číslo: ", val)
-prum = div(numCount,count)
-## @brief počítá průměr
-prumExp = 0
-for i in nums:
-## @brief prochází list hodnot a umocňuje je a potom sčítá
-    prumExp = add(prumExp,expon(i,2))
-## @brief finální matematický počet
-print(sqr(mul(div(1,sub(count,1)),sub(prumExp,mul(count,expon(prum,2)))),2))
 
+import cProfile
+import sys
+import pstats
+from calc_lib import *
+
+# Počet hodnot lze libovolně měnit (např. 10, 1000, 1000000)
+INPUT_SIZE = 10
+
+def calculate_stddev():
+    nums = []
+    numCount = 0
+    count = 0
+    for val in sys.stdin.read().split():
+        try:
+            nums.append(float(val))
+            numCount = add(numCount, float(val))
+            count = add(count, 1)
+        except ValueError:
+            print("zadané špatné číslo: ", val)
+
+    prum = div(numCount, count)
+    prumExp = 0
+    for i in nums:
+        prumExp = add(prumExp, expon(i, 2))
+
+    result = sqr(mul(div(1, sub(count, 1)), sub(prumExp, mul(count, expon(prum, 2)))), 2)
+    print(result)
+
+def run_profiled_calculations():
+    profiler = cProfile.Profile()
+    profiler.enable()
+
+    calculate_stddev()
+
+    profiler.disable()
+    stats = pstats.Stats(profiler)
+    with open('profiling_output.txt', 'w') as f:
+        stats.stream = f
+        stats.sort_stats('cumulative')  # nebo 'time' dle potřeby
+        stats.print_stats()
+
+if __name__ == "__main__":
+    run_profiled_calculations()
