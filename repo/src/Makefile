@@ -30,8 +30,8 @@ run:
 	python $(MAIN)
 
 ## Vyčistí dočasné nebo generované soubory
-clean: build
-	del /Q *.zip *.out *.log *.aux *.toc 2>nul || exit 0
+clean:
+	del /Q *.zip *.out *.log *.aux *.toc *.spec 2>nul || exit 0
 	rmdir /S /Q __pycache__ 2>nul || exit 0
 	rmdir /S /Q build 2>nul || exit 0
 
