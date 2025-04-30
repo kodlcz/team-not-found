@@ -45,7 +45,7 @@ clean:
 ## Zabalí projekt do zipu – včetně zdrojáků, dokumentace a Makefile
 pack: clean
 	PowerShell Compress-Archive -Path ../ -DestinationPath ../../$(DIST) -Force
-packf:
+packf: clean
 	PowerShell Compress-Archive -Path ../../ -DestinationPath ../../$(DIST2) -Force
 
 
