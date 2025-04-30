@@ -4,6 +4,7 @@
 MAIN=mockup.py
 TEST=test_calc_lib.py
 DIST=projekt.zip
+DIST2=projektf.zip
 PROF=stddev.py
 
 .PHONY: all clean pack test doc run stddev
@@ -43,8 +44,9 @@ clean:
 
 ## Zabalí projekt do zipu – včetně zdrojáků, dokumentace a Makefile
 pack: clean
-	PowerShell Compress-Archive -Path ../../ -DestinationPath ../../$(DIST) -Force
-
+	PowerShell Compress-Archive -Path ../ -DestinationPath ../../$(DIST) -Force
+packf:
+	PowerShell Compress-Archive -Path ../../ -DestinationPath ../../$(DIST2) -Force
 
 
 ## Profilovaný výpočet směrodatné odchylky – příkladový skript
