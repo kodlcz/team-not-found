@@ -1,7 +1,7 @@
 23.3-git
 28.3-návrh GUI
 5.4-programový návrh
-10.4-kompleace programu
+10.4-kompletace programu
 15.4-implmentce GUI
 18.4-makefile
 20.4-profiling

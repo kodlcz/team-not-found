@@ -1,1 +1,22 @@
 tento soubor bude obsahovat rozdil mezi planem projektu a skutecnosti
+23.3 -> 19.3-git
+28.3 -> ??-návrh GUI
+5.4 -> 8.4-programový návrh
+10.4 -> 9.4-kompletace programu
+15.4 -> 17.4-implmentce GUI
+18.4 -> 29.4-makefile
+20.4 -> 22.4-profiling
+28.4 -> 30.4-debugging
+29.4 -> 29.4-testy
+29.4 -> ??-mockupy
+30.4 -> 30.4-dokumentace
+1.5 -> 28.4-instaláory
+Hlavní problém nastal v půlce semetsru kvůli zkouškám a také v rámci špatného rozvržení úkolů jelikož nebyla odhadnuta jejich časová náročnost.
+
+xkadlea00 (programování,git,debugging,profiling,dokumentace,testy,makefile,instalátor,správa githubu)
+xtihelw00 (implementace GUI)
+xvacekj00 (nic)
+
+
+
+
